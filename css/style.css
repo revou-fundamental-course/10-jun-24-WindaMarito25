@@ -1,0 +1,89 @@
+body {
+  background-color: #fff;
+  text-align: left;
+}
+.title {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+.main {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn-dropdown {
+  color: black;
+}
+.desc-title {
+  text-align: center;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.input-number {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.conversion-desc {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#inputNumber {
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px;
+}
+#calculationsResult {
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+#detailsCalculation {
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.calculation-desc {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#conversionType {
+  padding: 5px;
+  border-radius: 8px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.button {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.btn {
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.section-calculation {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#formulaDesc {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 5rem;
+  display: flex;
+  color: black;
+  flex-direction: column;
+}

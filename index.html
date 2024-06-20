@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!---Judul Website -->
+    <header>
+      <h1 class="title">KONVERSI SUHU</h1>
+    </header>
+
+    <main>
+      <!-- Deskripsi Judul -->
+      <div>
+        <p class="desc-title">
+          Pilih jenis konversi terlebih dahulu lalu masukkan suhu derajat, lalu
+          klik tombol konversi untuk mendapatkan hasil konversi
+        </p>
+      </div>
+
+      <!-- Elemen untuk mengisi nilai suhu yang akan di konversi -->
+      <div class="main">
+        <section>
+          <p class="btn-dropdown">Pilih Jenis Konversi:</p>
+          <select id="conversionType">
+            <option value="celsius-to-fahrenheit">Celsius ke Fahrenheit</option>
+            <option value="fahrenheit-to-celsius">Fahrenheit ke Celsius</option>
+          </select>
+        </section>
+        <section>
+          <p class="input-number">Masukkan Angka :</p>
+          <input type="number" id="inputNumber" />
+        </section>
+        <section>
+          <p class="conversion-desc">Hasil Konversi :</p>
+          <input type="number" id="calculationsResult" />
+        </section>
+        <div class="button">
+          <button class="btn" onclick="konversi()">Konversi</button>
+          <button class="btn" onclick="reverse()">Reverse</button>
+          <button class="btn" onclick="reset()">Reset</button>
+        </div>
+      </div>
+
+      <!-- Cara Kalkulasi yang menunjukkan rumus dari konversi celcius ke fahrenheit, dan sebaliknya-->
+      <div class="section-calculation">
+        <p class="calculation-desc">Cara Kalkulasi :</p>
+        <input type="text" name="" id="detailsCalculation" />
+      </div>
+
+      <!-- Element untuk menampilkan rumus konversi -->
+      <div class="flex-container" id="formulaDesc" style="text-align: left">
+        <div id="celsiusFormula">
+          <b>Cara Konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F) :</b>
+          <p id="formula">
+            Suhu <i>S</i> dalam derajat Fahrenheit (&deg;F) sama dengan suhu
+            <i>S</i> dalam derajat (&deg;C) kali 9/5 tambah 32.
+          </p>
+          <p id="formula">
+            <i>S</i><sub>(&deg;F)</sub> = (<i>S</i><sub>(&deg;C)</sub> x 9/5) +
+            32
+          </p>
+          <p>atau</p>
+          <p>
+            <i>S</i><sub>(&deg;F)</sub> = (<i>S</i><sub>(&deg;C)</sub> x 1.8) +
+            32
+          </p>
+        </div>
+        <div id="formulaFahrenheit">
+          <b>Cara Konversi dari Fahrenheit (&deg;F) ke Celcius (&deg;C) :</b>
+          <p id="formula">
+            Suhu <i>S</i> dalam derajat Celcius (&deg;C) sama dengan suhu
+            <i>S</i> dalam derajat Fahrenheit (&deg;F) kali 9/5 kurang 32
+          </p>
+          <p id="formula">
+            <i>S</i><sub>(&deg;C)</sub> = (<i>S</i><sub>(&deg;F)</sub> x 9/5) -
+            32
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
